@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html , body {
+    height: 100%;
+}
+
+.main {
+top: 0;
+left: 0;
+height: 100%;
+background: url('img/landingpage.png');
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+}
+.ubuntu{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+}
+.second{
+    background-color: #121212;
+    color: #fff;
+    height: 100%;
+}
+
+.third{
+    /* background-color: #121212; */
+    color: #fff;
+    height: 100%;
+    background-color: #121212;
+    /* background: linear-gradient(to right, #3c1053, #ad5389); */
+    background: #3c1053;
+}
+
+.grad{
+    background: linear-gradient(90deg , #aa1010, #cc18a2, #1f43d6, #cc18a2, #aa1010);
+    background-size: 400%;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: animate 50s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+.yellow{
+background-color: #ffbb39;
+color: #121212;
+}
