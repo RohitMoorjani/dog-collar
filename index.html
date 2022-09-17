@@ -46,7 +46,7 @@
       <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
         <h1 class="title-font font-medium text-3xl" style="color: #fff;">how does it <span style="color: #ffbb39;">work?</span> </h1>
         <p class="leading-relaxed mt-4 text-white" style="color: #fff;">You let us know the requirement of a neon collar in the area by volunteering with us. The collar would be sent to your area and voila you're a superhero for a super cute doggo :)</p>
-        <button class="flex-shrink-0 font-medium border-0 py-2 px-8  rounded text-lg mt-10 sm:mt-0 yellow my-2" style="margin-top: 1rem; font-weight: 600;">add requirement</button>
+        <a href="https://forms.gle/Bc8CTrPSHUAPREhm8" target=”_blank”><button class="flex-shrink-0 font-medium border-0 py-2 px-8  rounded text-lg mt-10 sm:mt-0 yellow my-2" style="margin-top: 1rem; font-weight: 600;">add requirement</button></a>
       </div>
 
     </div>
@@ -75,16 +75,20 @@
         <h1 class="title-font font-medium text-3xl" style="color: #fff;">how can you <span style="color: #ffbb39;">help?</span> </h1>
         <h2 class="title-font font-medium text-2xl" style="color: #fff; padding-top: 3rem;">become our friendly neighbourhood <span style="color: #FFBD03; font-style: italic;">spiderman :)</span> </h2>
         <p class="leading-relaxed mt-4 text-white" style="color: #fff;">We alone cannot reach every area in our city, but together we can! Just count the number of stray dogs in your locality, add the necessary details by clicking on the button given below and the collars would be provided to them by us. </p>
-        <button class="flex-shrink-0 font-medium border-0 py-2 px-8  rounded text-lg mt-10 sm:mt-0 yellow my-2" style="margin-top: 1rem; font-weight: 600;">volunteer</button>
+        <a href="https://forms.gle/b5KL15r6RAAKzEKx6" target=”_blank”><button class="flex-shrink-0 font-medium border-0 py-2 px-8  rounded text-lg mt-10 sm:mt-0 yellow my-2" style="margin-top: 1rem; font-weight: 600;">volunteer</button></a>
         <h2 class="title-font font-medium text-2xl" style="color: #fff; padding-top: 3.5rem;">help us buy more <span style="color: #FFBD03; font-style: italic;">collars</span> </h2>
         <p class="leading-relaxed mt-4 text-white" style="color: #fff;">Every collar costs around 20rs. Every penny received will be contributed to saving lives of these innocent souls :)</p>
-        <button class="flex-shrink-0 font-medium border-0 py-2 px-8  rounded text-lg mt-10 sm:mt-0 my-2" style="margin-top: 1rem; font-weight: 600; color: #fff; background-color: #2f4c39;">donate now</button>
+        <button class="flex-shrink-0 font-medium border-0 py-2 px-8  rounded text-lg mt-10 sm:mt-0 my-2" onclick="disabledd()" style="margin-top: 1rem; font-weight: 600; color: #fff; background-color: #2f4c39;">donate now</button>
       </div>
     </div>
   </section>
 </div>
 
 <script>
+
+  function disabledd(){
+    alert("Currently not accepting donations! Thankyou for your kind gesture :) ");
+  }
   document.querySelectorAll('a[href^="#second"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
