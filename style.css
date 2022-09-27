@@ -8,6 +8,16 @@ html , body {
     height: 100%;
 }
 
+#imageC{
+position: absolute;
+bottom: 0;
+right: 0;
+width: 0;
+}
+
+img .imageC{
+    width: 0;
+}
 .main {
 top: 0;
 left: 0;

@@ -15,6 +15,7 @@
       <a class="flex title-font text-gray-900 font-medium items-center mb-4 md:mb-0">
         <span class="ml-3 text-4xl ubuntu" style="font-style: italic;">woof!</span>
       </a>
+      <div class="imagec" id="imageC"><img src="img/dog.PNG" alt=""></div>
     </div>
   </header>
 
@@ -77,7 +78,7 @@
         <p class="leading-relaxed mt-4 text-white" style="color: #fff;">We alone cannot reach every area in our city, but together we can! Just count the number of stray dogs in your locality, add the necessary details by clicking on the button given below and the collars would be provided to them by us. </p>
         <a href="https://forms.gle/b5KL15r6RAAKzEKx6" target=”_blank”><button class="flex-shrink-0 font-medium border-0 py-2 px-8  rounded text-lg mt-10 sm:mt-0 yellow my-2" style="margin-top: 1rem; font-weight: 600;">volunteer</button></a>
         <h2 class="title-font font-medium text-2xl" style="color: #fff; padding-top: 3.5rem;">help us buy more <span style="color: #FFBD03; font-style: italic;">collars</span> </h2>
-        <p class="leading-relaxed mt-4 text-white" style="color: #fff;">Every collar costs around 20rs. Every penny received will be contributed to saving lives of these innocent souls :)</p>
+        <p class="leading-relaxed mt-4 text-white" style="color: #fff;">Every collar costs around 20rs. You can click on the button below to make your contribution directly to the place of requirement. </p>
         <button class="flex-shrink-0 font-medium border-0 py-2 px-8  rounded text-lg mt-10 sm:mt-0 my-2" onclick="disabledd()" style="margin-top: 1rem; font-weight: 600; color: #fff; background-color: #2f4c39;">donate now</button>
       </div>
     </div>
@@ -94,6 +95,14 @@
       .py-24{
         padding-top: 3rem;
   padding-bottom: 3rem;
+}}
+
+@media (max-width: 400px){
+  #imageC{
+position: absolute;
+bottom: 0;
+right: 0;
+width: 70%;
 }
       
 }
@@ -105,7 +114,7 @@
 <script>
 
   function disabledd(){
-    alert("Currently not accepting donations! Thankyou for your kind gesture :) ");
+    alert( "Currently not accepting donations! Thankyou for your kind gesture :) ");
   }
   document.querySelectorAll('a[href^="#second"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
